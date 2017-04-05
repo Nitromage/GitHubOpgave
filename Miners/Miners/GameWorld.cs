@@ -12,8 +12,8 @@ namespace Miners
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        private GameWorld instance;
-        public GameWorld Instance
+        private static GameWorld instance;
+        public static GameWorld Instance
         {
             get
             {
@@ -39,6 +39,8 @@ namespace Miners
         /// </summary>
         protected override void Initialize()
         {
+
+            IsMouseVisible = true;
             // TODO: Add your initialization logic here
 
             base.Initialize();
